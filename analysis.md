@@ -1,19 +1,19 @@
-### Comparison Between Mammography Calcification Segmentation and Lung Segmentation
+# Comparison Between Mammography Calcification Segmentation and Lung Segmentation
 
-# Project background
+## Project background
 
-## This project compares two different datasets in Unet
+### This project compares two different datasets in Unet
 - Mammography Calcification Segmentation
 - Lung segmentation from Chest X-Ray dataset( from Nikhil Pandey)
-## The goal of this project
+### The goal of this project
 - Why these two datasets behave differently
 - How dataset characteristics affect segmentation difficulty
 - Why UNet performs well in one task but struggles in the other
 - How Dice score reflects task complexity
 - What improvements can be made
 
-# Dataset Description
-## Mammography Calcification Dataset
+## Dataset Description
+### Mammography Calcification Dataset
 - Image size: 512×512
 - Objective: detect extremely small calcification regions
 - Mask characteristics: small, low-contrast, irregular shapes
@@ -23,7 +23,7 @@
   -High noise + low contrast
   -Hard for UNet to capture micro features
 
-## Model Architecture(Unet)
+### Model Architecture(Unet)
 - Input: 512 × 512 × 3
 - Encoder: 4 downsampling blocks
   - Conv → BN → ReLU ×2
@@ -36,19 +36,19 @@
   - Skip connections
   - Filters: 512 → 256 → 128 → 64
 - Output: Conv(1, 1×1, sigmoid)
-## Loss Function
+### Loss Function
 - To handle extremely small lesions:
 - Tversky Loss (β > α, FN-heavy)
 - Focal Loss
 - Final Loss:
   - Loss = 0.7 * Tversky + 0.3 * Focal
 
-## Training Settings
+### Training Settings
 - Optimizer: Adam (1e-4)
 - Batch size: 4
 - Metric: Dice coefficient
 
-## Training Results Comparison
+### Training Results Comparison
 | Dataset                    | Train Dice | Val/Test Dice | Notes                                       |
 | -------------------------- | ---------- | ------------- | ------------------------------------------- |
 | Mammography Calcifications | ~0.20      | **0.15–0.18** | Small-object segmentation, very challenging |
