@@ -36,14 +36,14 @@
   - Skip connections
   - Filters: 512 → 256 → 128 → 64
 - Output: Conv(1, 1×1, sigmoid)
-# Loss Function
+## Loss Function
 - To handle extremely small lesions:
 - Tversky Loss (β > α, FN-heavy)
 - Focal Loss
 - Final Loss:
   - Loss = 0.7 * Tversky + 0.3 * Focal
 
-# Training Settings
+## Training Settings
 - Optimizer: Adam (1e-4)
 - Batch size: 4
 - Metric: Dice coefficient
@@ -52,5 +52,5 @@
 | Dataset                    | Train Dice | Val/Test Dice | Notes                                       |
 | -------------------------- | ---------- | ------------- | ------------------------------------------- |
 | Mammography Calcifications | ~0.20      | **0.15–0.18** | Small-object segmentation, very challenging |
----------------------------- | ---------- | ------------- | --------------------------------------------|
+|---------------------------- | ---------- | ------------- | -------------------------------------------|
 | Lung Segmentation          | ~0.95      | **0.92–0.97** | Large region segmentation, easy for UNet    |
