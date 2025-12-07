@@ -26,7 +26,7 @@ the difference dataset in Unet
 # Conclusion
  
   This comparsion helps me to understant how dataset characteristics heavily influence model performance and help me choose a more suitable model and loss function in the future.
-I found a huge different in useing the same dataset in Unet and Mask RCnn and using dufferent dataset in the same model.
-From this experience( Mammogram Calcification Segmentation in Unet), I realized the special of Unet and understand that the low dice doesn't mean this model is bad. Also, large-structure segmentation fits UNet’s strengths and a strong model cannot overcome poor contrast or tiny targets without preprocessing.
+I found a huge different in using the same dataset in Unet and Mask R-cnn and using different datasets in the same model.
+From this experience( Mammogram Calcification Segmentation in Unet), I realized the special of Unet and understand that the low dice doesn't mean this model is bad. Comparing to the lung dataset, large-structure segmentation fits UNet’s strengths and a strong model cannot overcome poor contrast or tiny targets without preprocessing.
 
   That is, the upper limit of a model is determined by the load of the dataset, not by the architecture itself.
