@@ -23,6 +23,10 @@ the difference dataset in Unet
 - ### Result
 - Val/Test Loss : 0.9281
 - Val/Test Dice : 0.1751
+<img width="1060" height="696" alt="image" src="https://github.com/user-attachments/assets/ac19c4ed-439c-4039-9c9d-2be83db32f6f" />
+
+<img width="1127" height="741" alt="image" src="https://github.com/user-attachments/assets/96a6ac79-1aa0-4fcb-b607-da50d0705394" />
+
 <img width="1434" height="460" alt="image" src="https://github.com/user-attachments/assets/4c2bf34e-da54-481b-a369-934861d69fef" />
 
 
