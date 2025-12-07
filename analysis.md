@@ -1,8 +1,8 @@
 ### Comparison Between Mammography Calcification Segmentation and Lung Segmentation
 
-##Project background
+## Project background
 
-#This project compares two different datasets in Unet
+# This project compares two different datasets in Unet
 - Mammography Calcification Segmentation
 - Lung segmentation from Chest X-Ray dataset( from Nikhil Pandey)
 # The goal of this project
