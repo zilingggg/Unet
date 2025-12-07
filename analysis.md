@@ -52,5 +52,4 @@
 | Dataset                    | Train Dice | Val/Test Dice | Notes                                       |
 | -------------------------- | ---------- | ------------- | ------------------------------------------- |
 | Mammography Calcifications | ~0.20      | **0.15–0.18** | Small-object segmentation, very challenging |
-|---------------------------- | ---------- | ------------- | -------------------------------------------|
 | Lung Segmentation          | ~0.95      | **0.92–0.97** | Large region segmentation, easy for UNet    |
