@@ -17,3 +17,7 @@ the difference dataset in Unet
 - Real mammography dataset  
 - Ground truth masks are small area lesions  
 - Image–mask ratio is extremely imbalanced → segmentation difficulty high
+
+- ### Result
+- Val/Test Loss : 0.9281
+- Val/Test Dice : 0.1751
